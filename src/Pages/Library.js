@@ -10,9 +10,11 @@ function Contact() {
         <Box mr="auto" ml="auto">
           <Heading as='h1' size='xl' align="center" mb={5}>The Library Page is still under construction!</Heading>
 
-          <Text fontSize='xl' mb={5}>In the meantime, please feel free to reach out to us if you would like to sponsor our society or an event, or if you have any questions, comments, or concerns! </Text>
+          <Text fontSize='xl' mb={5}>However, you can email our Librarian and see if they have a book you're interested in borrowing!</Text>
+          <Text fontSize='lg' fontWeight='bold' mb={3}>Librarian Email:</Text>
+          <Text fontSize='lg' mb={5}> <a href='mailto:duphysoclibrarian@gmail.com' target='_blank' rel="noreferrer noopener">duphysoclibrarian@gmail.com</a> </Text>
 
-          <Text fontSize='lg' fontWeight='bold' mb={3}>Email:</Text>
+          <Text fontSize='lg' fontWeight='bold' mb={3}>Regular Email:</Text>
           <Text fontSize='lg' mb={5}> <a href='mailto:physical@csc.tcd.ie' target='_blank' rel="noreferrer noopener">physical@csc.tcd.ie</a> </Text>
 
 
