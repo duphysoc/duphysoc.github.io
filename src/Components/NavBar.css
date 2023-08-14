@@ -1,0 +1,24 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+    background-color: #1a1a1a;
+    z-index: 3;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  
+  .navbar a {
+    color: white;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  #navbar-menu {
+    margin-left: 0.5rem;
+  }
+  
