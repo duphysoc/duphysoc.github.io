@@ -99,6 +99,21 @@ function NavBar() {
                     Contact Us
                   </MenuItem>
                 </NavLink>
+
+                <Link
+                  href="https://linktr.ee/du_physoc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MenuItem
+                    as={Link}
+                    color="white"
+                    style={{ backgroundColor: bgColor }}
+                  >
+                    Linktree & Tickets
+                  </MenuItem>
+                </Link>
+
               </MenuList>
             </Menu>
           </Box>

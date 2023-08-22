@@ -1,79 +1,66 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Papa from 'papaparse';
+import { Table, Thead, Tbody, Tr, Th, Td, Box, Container, Heading, Text, Center, useColorMode, LinkBox, LinkOverlay } from '@chakra-ui/react';
 import Layout from '../Components/Layout';
-import { Container, Heading, Text, Box } from '@chakra-ui/react';
 
+function Library() {
+    const [data, setData] = useState([]);
+    const { colorMode } = useColorMode(); // Using Chakra's useColorMode hook
 
-function Contact() {
-  return (
-    <Layout>
-      <Container maxW='xl' mt={10} mb={10} display="flex" alignItems="center">
-        <Box mr="auto" ml="auto">
-          <Heading as='h1' size='xl' align="center" mb={5}>The Library Page is still under construction!</Heading>
+    useEffect(() => {
+        // Parse CSV file
+        Papa.parse(process.env.PUBLIC_URL + '/Physoc_Library_Spreadsheet.csv', {
+            download: true,
+            header: true,
+            complete: (result) => {
+                setData(result.data);
+            },
+        });
+    }, []);
 
-          <Text fontSize='xl' mb={5}>However, you can email our Librarian and see if they have a book you're interested in borrowing!</Text>
-          <Text fontSize='lg' fontWeight='bold' mb={3}>Librarian Email:</Text>
-          <Text fontSize='lg' mb={5}> <a href='mailto:duphysoclibrarian@gmail.com' target='_blank' rel="noreferrer noopener">duphysoclibrarian@gmail.com</a> </Text>
+    return (
+        <Layout>
+            <Container maxW='xl' mt={10} mb={10} display="flex" alignItems="center">
+                <Box mr="auto" ml="auto">
+                    <Heading as='h1' size='xl' align="center" mb={5}>Library</Heading>
+                    <Text fontSize='xl' mb={5}>Here's our collection! If you're interested in borrowing any of our books, email our Librarian!</Text>
 
-          <Text fontSize='lg' fontWeight='bold' mb={3}>Regular Email:</Text>
-          <Text fontSize='lg' mb={5}> <a href='mailto:physical@csc.tcd.ie' target='_blank' rel="noreferrer noopener">physical@csc.tcd.ie</a> </Text>
+                    {/* Centered Librarian Email Box */}
+                    <LinkBox as={Center}
+                        borderWidth="1px"
+                        borderRadius="lg"
+                        p={4}
+                        my={5}
+                        backgroundColor={colorMode === 'light' ? "gray.100" : "gray.700"} // Adjust background color based on theme
+                        color={colorMode === 'light' ? "black" : "white"} // Adjust text color based on theme
+                    >
+                        <LinkOverlay href='mailto:duphysoclibrarian@gmail.com?subject=Request%20to%20Borrow%20%3CInsert%20Book%20Name%20Here%3E' target='_blank' rel="noreferrer noopener">
+                            <Text fontSize='lg' fontWeight='bold'>Librarian Email: duphysoclibrarian@gmail.com</Text>
+                        </LinkOverlay>
 
+                    </LinkBox>
 
-          <Text fontSize='lg' fontWeight='bold' mb={3}>Address:</Text>
-          <Text fontSize='lg' mb={5}>Dublin University Physics Society, <br/> Trinity College,<br/> University of Dublin,<br/>College Green,<br/> Dublin 2.</Text>
-
-        </Box>
-      </Container>
-
-      {/* <Container maxW='xl' mt={10} mb={10} display="flex" alignItems="center">
-        <Box ml={-0}>
-          <Image src={contactImage} alt="Contact us" w="250px" />
-        </Box>
-      </Container> */}
-
-    </Layout>
-  );
+                    {/* The CSV Data Table */}
+                    <Box mb={5} overflowX="auto">
+                        <Table variant="simple">
+                            <Thead>
+                                <Tr>
+                                    {data[0] && Object.keys(data[0]).map((key) => <Th key={key}>{key}</Th>)}
+                                </Tr>
+                            </Thead>
+                            <Tbody>
+                                {data.map((row, idx) => (
+                                    <Tr key={idx}>
+                                        {Object.values(row).map((value, i) => <Td key={i}>{value}</Td>)}
+                                    </Tr>
+                                ))}
+                            </Tbody>
+                        </Table>
+                    </Box>
+                </Box>
+            </Container>
+        </Layout>
+    );
 }
 
-export default Contact;
-
-
-// import { google } from 'googleapis';
-
-// const SPREADSHEET_ID = '';
-// const RANGE = 'Sheet1!A1:B10';
-
-// function Library() {
-//   const [books, setBooks] = useState([]);
-
-//   useEffect(() => {
-//     async function fetchBooks() {
-//       const auth = await google.auth.getClient({
-//         scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
-//       });
-
-//       const sheets = google.sheets({ version: 'v4', auth });
-
-//       const { data } = await sheets.spreadsheets.values.get({
-//         spreadsheetId: SPREADSHEET_ID,
-//         range: RANGE,
-//       });
-
-//       setBooks(data.values);
-//     }
-
-//     fetchBooks();
-//   }, []);
-
-//   return (
-//     <div>
-//       {books.map(([name, author]) => (
-//         <div key={`${name}-${author}`}>
-//           <h2>{name}</h2>
-//           <p>{author}</p>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// }
-
-// export default Library;
+export default Library;
