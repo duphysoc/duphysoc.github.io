@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Layout from '../Components/Layout';
+import { Button } from "@chakra-ui/react";
+
 import {
   Box,
   Container,
@@ -40,8 +42,9 @@ function Gallery() {
           Gallery
         </Heading>
         <Center>
-          <Text fontSize="lg">
-            Always check our Instagram and other socials for the latest photos!
+          <Text fontSize="lg" textAlign="center">
+          <br />
+            Always check our <Button as="a" href="https://www.instagram.com/du_physoc/" variant="outline" colorScheme="blue" target="_blank">Instagram</Button> and other socials for the latest photos!
           </Text>
         </Center>
       </Container>

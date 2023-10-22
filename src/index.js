@@ -20,11 +20,11 @@ root.render(
         <ColorModeScript />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/About' element={<About />} />
-          <Route path='/Home' element={<Home />} />
-          <Route path='/Contact_Us' element={<Contact />} />
-          <Route path='/Gallery' element={<Gallery />} />
-          <Route path='/Library' element={<Library />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/home' element={<Home />} />
+          <Route path='/contactus' element={<Contact />} />
+          <Route path='/gallery' element={<Gallery />} />
+          <Route path='/library' element={<Library />} />
         </Routes>
       </StrictMode>
     </ChakraProvider>

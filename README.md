@@ -1,7 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This also heavily used Chakra UI elements. That's why it looks so fancy.
-Some guidelines for the next webmaster; 
+INSTRUCTIONS FOR THE NEXT WEBMASTER:
+
+This heavily uses Chakra UI elements. That's why it looks so fancy.
+Some guidelines;
 The Physoc.ie website pulls its information from the github repository. So the idea is that you fork a clone the github (master) repository (using your own personal github account), 
 make all your lovely edits and then you compile that (i'll get to that in a sec), you deploy it (i'll get to that), then merge that deployment (you'll be merging gh-pages, but once again i'll get to it. so impatient.) with the physics society github and it should update the website.
 
@@ -28,7 +30,7 @@ If so, you can ignore this next bit about deployment and worry about it later;
 (okay, you're still here?)
 lovely. Okay so the nice thing about npm is that it also has built in deployment, but this (like most things as you'll learn) will take a bit of set up.
 First i should explain github pages. This is a free resource provided by github to host light websites in urls like https://aoneillmark.github.io/example-website/.
-This is fairly handy because sometimes actually running your website on a server will be different to hosting on your own computer in subtle ways (filepaths n shit) so it's a nice little test
+This is fairly handy because sometimes actually running your website on a server will be different to hosting on your own computer in subtle ways (filepaths and so on) so it's a nice little test
 And also it's handy because it means we can run physoc.ie on top of a github page essentially. 'physoc.ie' is just a coverup for a github web page. it's github all the way down i tell ya
 
 So you're going to deploy your website that you've written locally to a github page under your own account and your own fork. 

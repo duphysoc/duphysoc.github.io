@@ -10,22 +10,11 @@ function About() {
       image: "/Images/Committee/Auditor.jpg",
       text: (
         <>
-          Heya! I'm Mark and I'll be your auditor this year. Looking forward to seeing you all at our upcoming events!
-          We have some great things planned for this year so keep an eye on this page to stay updated!
-          If there are any concerns you have, just send it my way and I'll do my best!
-        </>
-      )
-    },
-    {
-      name: "Secretary",
-      image: "/Images/Committee/Secretary.jpg",
-      text: (
-        <>
-          Hi, I'm Sam and I'm the new Physoc secretary this year.
-          I am a 3rd year physics student and have always had a great passion for physics.
-          I'm looking forward to getting more involved in the society this year and helping organise some amazing events.
-          My interests include science, video games and crying over lab reports.
-          Can't wait to send some class emails and getting to seeing everyone at all the incredible events throughout the year.
+          <br />
+          <Heading size="md">Yuliya Makarenko</Heading> 
+          <Text fontSize="sm" fontWeight="bold">2nd Year Physics</Text> <br />
+          <Text fontSize="sm" fontWeight="bold">Most bizarre physical phenomenon:</Text> 
+          Dark Lightning
         </>
       )
     },
@@ -34,9 +23,24 @@ function About() {
       image: "/Images/Committee/Treasurer.jpg",
       text: (
         <>
-          Hey I'm Jack, a 3rd year nano student. My role as treasurer is to safeguard our fat stacks of sweet, sweet gold.
-          My three favorite things are physics, sailing, and kittens (I fkn love kittens).
-          I think joining Physoc is the perfect way to get away from those long lectures, and to get to know other people with similar interests to you!
+          <br />
+          <Heading size="md">Triyaa Gulati</Heading> 
+          <Text fontSize="sm" fontWeight="bold">3rd Year Nanoscience</Text> <br />
+          <Text fontSize="sm" fontWeight="bold">Most bizarre physical phenomenon:</Text> 
+          Hysteresis
+        </>
+      )
+    },
+    {
+      name: "Secretary",
+      image: "/Images/Committee/Secretary.jpg",
+      text: (
+        <>
+          <br />
+          <Heading size="md">Alexey</Heading> 
+          <Text fontSize="sm" fontWeight="bold">3rd Year Theoretical Physics</Text> <br />
+          <Text fontSize="sm" fontWeight="bold">Most bizarre physical phenomenon:</Text> 
+          The nutation when I throw this water bottle
         </>
       )
     },
@@ -45,9 +49,11 @@ function About() {
       image: "/Images/Committee/PRO.jpg",
       text: (
         <>
-          Hey there. I'm Luke and I'll be the PRO this year in ducks meaning posters, apparel and socials fall under my domain.
-          I'm a third year physics student but I also love sculpting, writing and playing the keyboard.
-          Looking forward to an exciting year getting to know our members.
+          <br />
+          <Heading size="md">Teresa del Águila Ferrandis</Heading> 
+          <Text fontSize="sm" fontWeight="bold">3rd Year Theoretical Physics</Text> <br />
+          <Text fontSize="sm" fontWeight="bold">Most bizarre physical phenomenon:</Text> 
+          The Casimir effect which indicates the presence of quantum fluctuations in vacuum that can be though of as virtual particles constantly popping in and out of existence
         </>
       )
     },
@@ -56,8 +62,11 @@ function About() {
       image: "/Images/Committee/Librarian.jpg",
       text: (
         <>
-          Hi, my name is Sally, I'm in third year physics. I'll be the Physoc librarian this year.
-          If you're looking to borrow a book, contact me at duphysoclibrarian@gmail.com.
+          <br />
+          <Heading size="md">Sally Dolan</Heading> 
+          <Text fontSize="sm" fontWeight="bold">4th Year Physics</Text> <br />
+          <Text fontSize="sm" fontWeight="bold">Most bizarre physical phenomenon:</Text> 
+          The existence of pulsars
         </>
       )
     },
@@ -66,11 +75,11 @@ function About() {
       image: "/Images/Committee/EventOfficer.jpg",
       text: (
         <>
-          Ciao, I'm Hannah! I'm a theoretical physics student and I will be the trips and events officer for Physoc this year.
-          I love problem solving, listening to smart people talk, old buildings and public transport.
-          As the first year back fully in person, I hope to smush as much fun into the year as possible :))
-          Keep an eye out for our quizzes, talks, balls, problem solving sessions, society collab events and reading week trip.
-          I look forward to seeing you soon.
+          <br />
+          <Heading size="md">Robert Parker</Heading> 
+          <Text fontSize="sm" fontWeight="bold">4th Year Physics</Text> <br />
+          <Text fontSize="sm" fontWeight="bold">Most bizarre physical phenomenon:</Text> 
+          We are stars, stars are us
         </>
       )
     },
@@ -79,10 +88,11 @@ function About() {
       image: "/Images/Committee/Webmaster.jpg",
       text: (
         <>
-          Hi! my name is Robert and I'm the webmaster for physoc.
-          I'm in third year studying general physics and I love everything to do with technology and physics.
-          My main hobbies include reading, coding and reading code.
-          If you think wow that guy sounds like a nerd you'd be correct, and it was a little hurtful.
+          <br />
+          <Heading size="md">Mark O'Neill</Heading> 
+          <Text fontSize="sm" fontWeight="bold">4th Year Physics</Text> <br />
+          <Text fontSize="sm" fontWeight="bold">Most bizarre physical phenomenon:</Text> 
+          The Leidenfrost effect: water on a hot surface can levitate on a cushion of its own vapour
         </>
       )
     },
@@ -91,8 +101,37 @@ function About() {
       image: "/Images/Committee/IOPRep.jpg",
       text: (
         <>
-          Hi I'm Kate, I'm going into 4th year nanoscience, and I'm excited to be the IOP rep this year after being on committee since 1st year.
-          I love to read and sew and organise events so I'm really looking forward to what this year will bring with physoc with new people and new ideas!
+          <br />
+          <Heading size="md">Sam Marks</Heading> 
+          <Text fontSize="sm" fontWeight="bold">4th Year Physics</Text> <br />
+          <Text fontSize="sm" fontWeight="bold">Most bizarre physical phenomenon:</Text> 
+          Although a trillion neutrinos pass through a glass of water every second, it would take one in every 10 million trillion for a detectable collision to occur
+        </>
+      )
+    },
+    {
+      name: "1st Year Representative",
+      image: "/Images/Committee/1stYearRep.jpg",
+      text: (
+        <>
+          <br />
+          <Heading size="md">Gabrielle Corcoran</Heading> 
+          <Text fontSize="sm" fontWeight="bold">1st Year Physics</Text> <br />
+          <Text fontSize="sm" fontWeight="bold">Most bizarre physical phenomenon:</Text> 
+          Quantum tunnelling: when a particle is able to penetrate through a potential energy barrier that's higher than its own kinetic energy, for example, it's possible that if you slap a table, your hand will pass through it!
+        </>
+      )
+    },
+    {
+      name: "Postgraduate Representative",
+      image: "/Images/Committee/PostgradRep.jpg",
+      text: (
+        <>
+          <br />
+          <Heading size="md">Kacper Nowak</Heading> 
+          <Text fontSize="sm" fontWeight="bold">MSc Quantum Science and Technology</Text> <br />
+          <Text fontSize="sm" fontWeight="bold">Most bizarre physical phenomenon:</Text> 
+          Quantum entanglement
         </>
       )
     },
@@ -101,8 +140,11 @@ function About() {
       image: "/Images/Committee/OCM.jpg",
       text: (
         <>
-          Hi everyone I'm Aisling (she/her) and I'm a fourth year Nanoscience student. I'll be your OCM this year, after two years of being the Librarian and I'm super excited to see what the year will bring!
-          Asides from Physics, I really love to bake and to read.
+          <br />
+          <Heading size="md">Kate Elliott</Heading> 
+          <Text fontSize="sm" fontWeight="bold">4th Year Nanoscience</Text> <br />
+          <Text fontSize="sm" fontWeight="bold">Most bizarre physical phenomenon:</Text> 
+          The lotus effect: lotus plants have nano and micro structures on their leaves that make them superhydrophobic and self cleaning, water just runs right off them taking any dirt with it
         </>
       )
     },

@@ -47,7 +47,7 @@ export const eventsData = [
             { id: 20, src: './Images/Gallery/CERN/12.jpeg', alt: 'Image 20' },
             { id: 21, src: './Images/Gallery/CERN/13.jpeg', alt: 'Image 21' },
         ],
-        description: 'This was our big trip for the 2021/22 academic year. We went to CERN in Geneva, Switzerland, saw the sites, and marvelled at the enormous particle physics going on!',
+        description: "This was our big trip for the 2021/22 academic year. We went to CERN in Geneva, Switzerland, saw the sites, and marvelled at the enormous particle physics going on! Photo credit: Mark O'Neill, Ruaidhrí Campion",
     },
 
     {
